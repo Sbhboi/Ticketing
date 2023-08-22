@@ -1,7 +1,7 @@
 require './Card.rb'
 require "./Rider.rb"
 require "./Station.rb"
-  
+
   card = Card.new(0)
   rider1 = Rider.new("Eva", "0168170407", "101")
   rider2 = Rider.new("Pame", "0165869373", "102")
@@ -18,7 +18,25 @@ require "./Station.rb"
   station3 = Station.new("Papar", 69)
   station4 = Station.new("Putatan-Petagas", 18)
   
-  puts station1.place
-  puts station2.place
+  puts "Destination: 1: #{station1.place}, 2: #{station2.place}, 3: #{station3.place}, 4: #{station4.place}"
+  puts "Select the destination"
 
-  
+# 1 = station1
+
+# 2 = station2
+# 3 = station3
+# 4 = station4
+
+answer = gets.chomp
+if answer == 1
+  puts "Traveling to Riverson"
+    elsif answer == 2
+      puts "Traveling to One Borneo"
+    elsif answer == 3
+      puts "Traveling to Papar"
+    elsif answer == 4
+      puts "Traveling to Putatan-Petagas"
+    else
+      puts "proceed for payment"
+
+end
