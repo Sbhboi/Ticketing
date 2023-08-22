@@ -1,4 +1,6 @@
 class Station
+  attr_reader :place, :fare
+
     def initialize(place, fare)
       @place = place 
       @fare = fare
@@ -6,10 +8,6 @@ class Station
   
     def place
       @place 
-    end
-  
-    def distance
-      @distance 
     end
   
     def fare
