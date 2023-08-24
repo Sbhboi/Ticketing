@@ -6,11 +6,16 @@ class Station
       @fare = fare
     end
   
-    def place
-      @place 
-    end
+    # def place
+    #   @place 
+    # end
   
-    def fare
-      @fare
+    # def fare
+    #   @fare
+    # end
+
+    def promotion_fare(event)
+      discount = Configuration::PROMOTIONAL [event]['discount']
+      @fare * ( 1 - (discount/100))
     end
 end
